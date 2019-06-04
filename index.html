@@ -5,6 +5,24 @@
         </title>
     </head>
     <body>
-        <button id="btn">Click me</button>
+        <nav>Hello</nav>
+        <button id="btn" class="btn">Click me</button>
+
+        <img style="display:none;" src="img/cat.png" alt="cat">
+
+        <script>
+            // 1 SELECT THE ELEMENT
+            var myButton = document.getElementById("btn");
+
+
+            // 2 DECIDE ON THE EVENT
+            // 4 PUT THE LISTENER ON THE ELEMENT
+            myButton.addEventListener("click", nyan);
+
+            // 3 DEFINE THE LISTENER
+            function nyan () {
+                
+            }
+        </script>
     </body>
 </html>
