@@ -3,12 +3,19 @@
         <title>
             Nyan cat
         </title>
+        <style>
+            #cat {
+                position:fixed;
+                top:0;
+                left:0;
+            }
+        </style>
     </head>
     <body>
         <nav>Hello</nav>
         <button id="btn" class="btn">Click me</button>
 
-        <img style="display:none; width:75px;" src="img/cat.png" alt="cat">
+        <img id="cat" style="display:none; width:75px;" src="img/cat.png" alt="cat">
 
         <script>
             // 1 SELECT THE ELEMENT
@@ -21,8 +28,14 @@
 
             // 3 DEFINE THE LISTENER
             function nyan () {
-                
+                document.querySelector("#cat").style.display = "block";                
             }
+
+            ///////
+
+            setInterval(function () {
+                
+            }, 16);
         </script>
     </body>
 </html>
